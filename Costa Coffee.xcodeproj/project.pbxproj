@@ -15,6 +15,11 @@
 		48F92C452614F55C00050118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F92C432614F55C00050118 /* LaunchScreen.storyboard */; };
 		48F92C502614F55C00050118 /* Costa_CoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C4F2614F55C00050118 /* Costa_CoffeeTests.swift */; };
 		48F92C5B2614F55D00050118 /* Costa_CoffeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C5A2614F55D00050118 /* Costa_CoffeeUITests.swift */; };
+		48F92C702614F60C00050118 /* ImageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C6F2614F60C00050118 /* ImageResult.swift */; };
+		48F92C782614F63800050118 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C772614F63800050118 /* Location.swift */; };
+		48F92C7D2614F65200050118 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C7C2614F65200050118 /* Response.swift */; };
+		48F92C822614F66A00050118 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C812614F66A00050118 /* Results.swift */; };
+		48F92C872614F68500050118 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C862614F68500050118 /* Venue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		48F92C562614F55D00050118 /* Costa CoffeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Costa CoffeeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F92C5A2614F55D00050118 /* Costa_CoffeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Costa_CoffeeUITests.swift; sourceTree = "<group>"; };
 		48F92C5C2614F55D00050118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F92C6F2614F60C00050118 /* ImageResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResult.swift; sourceTree = "<group>"; };
+		48F92C772614F63800050118 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		48F92C7C2614F65200050118 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		48F92C812614F66A00050118 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		48F92C862614F68500050118 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,10 @@
 		48F92C372614F55A00050118 /* Costa Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				48F92C6E2614F5E700050118 /* Service */,
+				48F92C6D2614F5DC00050118 /* Model */,
+				48F92C6C2614F5D100050118 /* ViewModel */,
+				48F92C6B2614F5C500050118 /* View */,
 				48F92C382614F55A00050118 /* AppDelegate.swift */,
 				48F92C3A2614F55A00050118 /* SceneDelegate.swift */,
 				48F92C3C2614F55A00050118 /* ContentView.swift */,
@@ -134,6 +148,39 @@
 				48F92C5C2614F55D00050118 /* Info.plist */,
 			);
 			path = "Costa CoffeeUITests";
+			sourceTree = "<group>";
+		};
+		48F92C6B2614F5C500050118 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48F92C6C2614F5D100050118 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				48F92C6F2614F60C00050118 /* ImageResult.swift */,
+				48F92C772614F63800050118 /* Location.swift */,
+				48F92C7C2614F65200050118 /* Response.swift */,
+				48F92C812614F66A00050118 /* Results.swift */,
+				48F92C862614F68500050118 /* Venue.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		48F92C6D2614F5DC00050118 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48F92C6E2614F5E700050118 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +314,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F92C392614F55A00050118 /* AppDelegate.swift in Sources */,
+				48F92C872614F68500050118 /* Venue.swift in Sources */,
 				48F92C3B2614F55A00050118 /* SceneDelegate.swift in Sources */,
+				48F92C782614F63800050118 /* Location.swift in Sources */,
+				48F92C822614F66A00050118 /* Results.swift in Sources */,
+				48F92C702614F60C00050118 /* ImageResult.swift in Sources */,
+				48F92C7D2614F65200050118 /* Response.swift in Sources */,
 				48F92C3D2614F55A00050118 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		48F92C392614F55A00050118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C382614F55A00050118 /* AppDelegate.swift */; };
 		48F92C3B2614F55A00050118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C3A2614F55A00050118 /* SceneDelegate.swift */; };
-		48F92C3D2614F55A00050118 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C3C2614F55A00050118 /* ContentView.swift */; };
+		48F92C3D2614F55A00050118 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C3C2614F55A00050118 /* ListItemView.swift */; };
 		48F92C3F2614F55C00050118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F92C3E2614F55C00050118 /* Assets.xcassets */; };
 		48F92C422614F55C00050118 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F92C412614F55C00050118 /* Preview Assets.xcassets */; };
 		48F92C452614F55C00050118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F92C432614F55C00050118 /* LaunchScreen.storyboard */; };
@@ -22,6 +22,8 @@
 		48F92C872614F68500050118 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C862614F68500050118 /* Venue.swift */; };
 		48F92C8C2614F6E700050118 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C8B2614F6E700050118 /* APIService.swift */; };
 		48F92C942614F70C00050118 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C932614F70C00050118 /* Constants.swift */; };
+		48F92C992614F76E00050118 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C982614F76E00050118 /* ListViewModel.swift */; };
+		48F92C9E2614F7C200050118 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C9D2614F7C200050118 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,7 @@
 		48F92C352614F55A00050118 /* Costa Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Costa Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F92C382614F55A00050118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F92C3A2614F55A00050118 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48F92C3C2614F55A00050118 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		48F92C3C2614F55A00050118 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		48F92C3E2614F55C00050118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48F92C412614F55C00050118 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		48F92C442614F55C00050118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 		48F92C862614F68500050118 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		48F92C8B2614F6E700050118 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		48F92C932614F70C00050118 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		48F92C982614F76E00050118 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		48F92C9D2614F7C200050118 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,6 @@
 				48F92C6B2614F5C500050118 /* View */,
 				48F92C382614F55A00050118 /* AppDelegate.swift */,
 				48F92C3A2614F55A00050118 /* SceneDelegate.swift */,
-				48F92C3C2614F55A00050118 /* ContentView.swift */,
 				48F92C3E2614F55C00050118 /* Assets.xcassets */,
 				48F92C432614F55C00050118 /* LaunchScreen.storyboard */,
 				48F92C462614F55C00050118 /* Info.plist */,
@@ -157,6 +160,8 @@
 		48F92C6B2614F5C500050118 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				48F92C9D2614F7C200050118 /* ListView.swift */,
+				48F92C3C2614F55A00050118 /* ListItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 		48F92C6C2614F5D100050118 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				48F92C982614F76E00050118 /* ListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -327,8 +333,10 @@
 				48F92C942614F70C00050118 /* Constants.swift in Sources */,
 				48F92C702614F60C00050118 /* ImageResult.swift in Sources */,
 				48F92C7D2614F65200050118 /* Response.swift in Sources */,
+				48F92C9E2614F7C200050118 /* ListView.swift in Sources */,
 				48F92C8C2614F6E700050118 /* APIService.swift in Sources */,
-				48F92C3D2614F55A00050118 /* ContentView.swift in Sources */,
+				48F92C3D2614F55A00050118 /* ListItemView.swift in Sources */,
+				48F92C992614F76E00050118 /* ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

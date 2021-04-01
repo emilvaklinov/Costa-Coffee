@@ -18,8 +18,8 @@ struct ListItemView: View {
             HStack(spacing: 50) {
             Image(uiImage: image)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .border(Color.blue, width: 3.0)
+                .aspectRatio(contentMode: .fill)
+                .border(Color.red, width: 3.0)
                 .frame(width: 100, height: 100, alignment: .center)
                 .clipShape(Circle())
                 .overlay(
@@ -29,11 +29,14 @@ struct ListItemView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("\(venue.name)")
                     .font(Font.system(size: 18))
-                Text("\(venue.location.address),  \(String(format: "%.1f", Float(venue.location.distance) * 0.000621)) miles")
+                Text("\(venue.location.address)")
                     .font(Font.system(size: 12))
                     .foregroundColor(.gray)
                 Text("\(venue.location.city)")
-                    .font(Font.system(size: 12))
+                    .font(Font.system(size: 14))
+                    .foregroundColor(.gray)
+                Text("\(String(format: "%.1f", Float(venue.location.distance) * 0.000621)) miles")
+                    .font(Font.system(size: 14))
                     .foregroundColor(.gray)
             }
         }

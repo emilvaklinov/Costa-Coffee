@@ -11,13 +11,15 @@ import SwiftUI
 
 class Constants {
     
- 
+//    static let CLIENT_ID = "D51EXKQ2L2ITIGPSUZCEY44MGRLOQTUEYEZQOA3QKXOSWGMY"
+//    static let CLIENT_KEY = "FJ2X4B3MAFWGY0WPRCN11QECCBPCQE5TSO14YNOP5WZM4NGQ"
+
     
     static let venueURLString = "https://api.foursquare.com/v2/venues/search"
     static let imageURLString = "https://api.foursquare.com/v2/venues/"
 
-    static let CLIENT_ID = "QQBSD4K1LFOV132B4PEV04QDJC3RAL2KVGV1E05KPLZT2KNW"
-    static let CLIENT_KEY = "KB1Z4RF0DIKYM1Z4IHOOZBS0RSGGYGVV45XIFYPE4ORKYKYJ"
+    static let CLIENT_ID = "2P0PR3KIQDZM0WYDRZB1VKLDVKGICILZQZOBKE5JYG2PUOBH"
+    static let CLIENT_KEY = "ZT50LHZD1NDK5TBFLUHLIEYDJNH3K5GFVONHWWYDKLTCGCIB"
     
 //    static let LOCATION = "51.5085300,-0.1257400"
     static let CATEGORY_TYPE = "coffee"

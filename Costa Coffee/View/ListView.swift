@@ -9,12 +9,28 @@ import SwiftUI
 
 struct ListView: View {
     @ObservedObject var viewModel = ListViewModel()
+    @ObservedObject var locationManager = LocationManager()
+
+    var userLatitude: String {
+        return "\(locationManager.lastLocation?.coordinate.latitude ?? 0)"
+    }
+
+    var userLongitude: String {
+        return "\(locationManager.lastLocation?.coordinate.longitude ?? 0)"
+    }
     var body: some View {
         NavigationView {
             List(viewModel.venueList.indexed(), id: \.1.id) { (index, venue) in
                 ListItemView(venue: venue)
             }
             .navigationTitle("Costa near me!")
+            VStack {
+                        Text("location status: \(locationManager.statusString)")
+                        HStack {
+                            Text("latitude: \(userLatitude)")
+                            Text("longitude: \(userLongitude)")
+                        }
+                    }
         }
         .onAppear {
             DispatchQueue.global().async {

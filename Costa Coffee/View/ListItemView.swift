@@ -16,7 +16,7 @@ struct ListItemView: View {
     VStack {
         ZStack {
             HStack(spacing: 50) {
-            Image(uiImage: image)
+                Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .border(Color.red, width: 3.0)

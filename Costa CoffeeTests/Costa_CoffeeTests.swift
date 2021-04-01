@@ -23,9 +23,9 @@ class Costa_CoffeeTests: XCTestCase {
       }
     
        //  Asynchronous test: success fast, failure slow
-        func testValidCallToGetsHTTPStatusCode200() {
+        func testValidCallToGetsImageHTTPStatusCode200() {
             // given
-            let url = URL(string: "https://api.foursquare.com/v2/venues/5bd1ba2046e1b6002c83e5e4/photos?client_id=QQBSD4K1LFOV132B4PEV04QDJC3RAL2KVGV1E05KPLZT2KNW&client_secret=KB1Z4RF0DIKYM1Z4IHOOZBS0RSGGYGVV45XIFYPE4ORKYKYJ&v=20210331&limit=1")
+            let url = URL(string: "https://api.foursquare.com/v2/venues/5a6dfdcf48b04e70ed5493b5/photos?client_id=2P0PR3KIQDZM0WYDRZB1VKLDVKGICILZQZOBKE5JYG2PUOBH&client_secret=LZPVRV5IEITTMNVSIAS0TLNTCP4PFBQNTK4AFGDLV0MKBMCF&v=20210331&limit=1")
             // 1
             let promise = expectation(description: "Status code: 200")
     
@@ -49,10 +49,38 @@ class Costa_CoffeeTests: XCTestCase {
             wait(for: [promise], timeout: 5)
         }
     
+    
+    //  Asynchronous test: success fast, failure slow
+     func testValidCallToGetsVenusHTTPStatusCode200() {
+         // given
+         let url = URL(string: "https://api.foursquare.com/v2/venues/search?client_id=2P0PR3KIQDZM0WYDRZB1VKLDVKGICILZQZOBKE5JYG2PUOBH&client_secret=LZPVRV5IEITTMNVSIAS0TLNTCP4PFBQNTK4AFGDLV0MKBMCF&query=coffee&limit=15&v=20210331&ll=51.5085300,-0.1257400")
+         // 1
+         let promise = expectation(description: "Status code: 200")
+ 
+         // when
+         let dataTask = sut.dataTask(with: url!) { data, response, error in
+             // then
+             if let error = error {
+                 XCTFail("Error: \(error.localizedDescription)")
+                 return
+             } else if let statusCode = (response as? HTTPURLResponse)?.statusCode {
+                 if statusCode == 200 {
+                     // 2
+                     promise.fulfill()
+                 } else {
+                     XCTFail("Status code: \(statusCode)")
+                 }
+             }
+         }
+         dataTask.resume()
+         // 3
+         wait(for: [promise], timeout: 5)
+     }
+    
     // Asynchronous test: faster fail
      func testCallToCompletes() {
          // given
-         let url = URL(string: "https://api.foursquare.com/v2/venues/search?client_id=QQBSD4K1LFOV132B4PEV04QDJC3RAL2KVGV1E05KPLZT2KNW&client_secret=KB1Z4RF0DIKYM1Z4IHOOZBS0RSGGYGVV45XIFYPE4ORKYKYJ&query=coffee&limit=15&v=20210331&ll=51.5085300,-0.1257400")
+         let url = URL(string: "https://api.foursquare.com/v2/venues/search?client_id=2P0PR3KIQDZM0WYDRZB1VKLDVKGICILZQZOBKE5JYG2PUOBH&client_secret=LZPVRV5IEITTMNVSIAS0TLNTCP4PFBQNTK4AFGDLV0MKBMCF&query=coffee&limit=15&v=20210331&ll=51.5085300,-0.1257400")
          // 1
          let promise = expectation(description: "Completion handler invoked")
          var statusCode: Int?

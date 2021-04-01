@@ -38,3 +38,10 @@ README.md) explaining the approach you have taken.
 
 ### Swift architecture
 - The application is built with an MVVM design pattern.
+
+### Tech details and visualisation
+- Getting users location printed in the console
+"locationManager(_:didUpdateLocations:) <+51.50998000,-0.13370000> +/- 5.00m (speed -1.00 mps / course -1.00) @ 4/1/21, 12:14:57 PM British Summer Time"
+
+## Populationg data
+![Screenshot 2021-04-01 at 12 30 11](https://user-images.githubusercontent.com/30974420/113289772-941e1700-92e8-11eb-91f1-3cf4b377779a.png)

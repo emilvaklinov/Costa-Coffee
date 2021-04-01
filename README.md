@@ -31,7 +31,7 @@ README.md) explaining the approach you have taken.
 
 ### Running site locally
 - The app can be runed by Xcode simulator.
-- The keys can be exchabged to new one becaouse the image has dayly limits.
+- The keys can be exchaged to new one because the fetching of images has dayly limit!
 
 ### Version Control
 - The app is under a git hub repository.
@@ -43,5 +43,5 @@ README.md) explaining the approach you have taken.
 - Getting users location printed in the console
 "locationManager(_:didUpdateLocations:) <+51.50998000,-0.13370000> +/- 5.00m (speed -1.00 mps / course -1.00) @ 4/1/21, 12:14:57 PM British Summer Time"
 
-## Populationg data
+## Populating data
 ![Screenshot 2021-04-01 at 12 30 11](https://user-images.githubusercontent.com/30974420/113289772-941e1700-92e8-11eb-91f1-3cf4b377779a.png)

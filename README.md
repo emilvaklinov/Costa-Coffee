@@ -30,8 +30,8 @@ README.md) explaining the approach you have taken.
 
 
 ### Running site locally
-The app can be runed by Xcode simulator.
-The keys can be exchabged to new one becaouse the image has dayly limits.
+- The app can be runed by Xcode simulator.
+- The keys can be exchabged to new one becaouse the image has dayly limits.
 
 ### Version Control
 - The app is under a git hub repository.

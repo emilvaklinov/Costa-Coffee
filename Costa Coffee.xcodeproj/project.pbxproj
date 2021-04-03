@@ -101,7 +101,6 @@
 			children = (
 				48F92C382614F55A00050118 /* AppDelegate.swift */,
 				48F92C3A2614F55A00050118 /* SceneDelegate.swift */,
-				4828735E261519F50057681D /* LocationManager.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -202,6 +201,7 @@
 			children = (
 				48F92C8B2614F6E700050118 /* APIService.swift */,
 				48F92C932614F70C00050118 /* Constants.swift */,
+				4828735E261519F50057681D /* LocationManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -518,6 +518,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Costa Coffee/Preview Content\"";
+				DEVELOPMENT_TEAM = 2RQK3JX6CU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Costa Coffee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -538,6 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Costa Coffee/Preview Content\"";
+				DEVELOPMENT_TEAM = 2RQK3JX6CU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Costa Coffee/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

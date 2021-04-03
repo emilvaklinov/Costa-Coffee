@@ -12,7 +12,7 @@ import SwiftUI
 class APIService {
     
     @ObservedObject var locationManager = LocationManager()
-
+    
     var userLatitude: String {
         return "\(String(describing: locationManager.lastLocation?.coordinate.latitude))"
         }
@@ -22,7 +22,7 @@ class APIService {
         }
     
     func fetchData(callback: @escaping ([Venue]?)-> Void) {
-        let queryLocation = "51.5085300,-0.1257400"
+        let queryLocation = Constants.LOCATION
 //        let queryLocation = "\(userLatitude), \(userLongitude)"
         let urlString = Constants.getCompleteURL() + "\(queryLocation)"
         guard let url = URL(string: urlString ) else {

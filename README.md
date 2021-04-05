@@ -29,9 +29,11 @@ README.md) explaining the approach you have taken.
 - Documentation added
 
 
-### Running site locally
+### Running App locally
 - The app can be runed by Xcode simulator.
 - The keys can be exchaged to new one because the fetching of images has dayly limit!
+- The key is implemented and there is a second one in Constant.swift file. **Keep in mind the images have day limit calling from the API.**
+- The Unit test can be run but because of the limit of the images API it can go to red if the API call is overused which is very fast. To make new call you need to change the key or use your own one.
 
 ### Version Control
 - The app is under a git hub repository.

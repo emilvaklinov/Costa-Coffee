@@ -12,10 +12,9 @@ import SwiftUI
 class APIService {
 
     @ObservedObject var locationViewModel = LocationViewModel()
-    
     func fetchData(callback: @escaping ([Venue]?)-> Void) {
         let queryLocation = Constants.LOCATION
-//        let queryLocation = "\(locationViewModel.userLatitude), \(locationViewModel.userLongitude)"
+//        let queryLocation = "\(locationViewModel.userLatitude.toString()), \(locationViewModel.userLongitude.toString())"
         let urlString = Constants.getCompleteURL() + "\(queryLocation)"
         guard let url = URL(string: urlString ) else {
             print("url parsing failed")
@@ -101,5 +100,11 @@ class APIService {
                 callback(data)
             }.resume()
         }
+    }
+}
+
+extension Double {
+    func toString() -> String {
+        return String(format: "%f",self)
     }
 }

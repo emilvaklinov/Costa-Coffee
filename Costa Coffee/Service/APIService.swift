@@ -10,20 +10,12 @@ import CoreLocation
 import SwiftUI
 
 class APIService {
-    
-    @ObservedObject var locationManager = LocationManager()
-    
-    var userLatitude: String {
-        return "\(String(describing: locationManager.lastLocation?.coordinate.latitude))"
-        }
 
-    var userLongitude: String {
-        return "\(String(describing: locationManager.lastLocation?.coordinate.longitude))"
-        }
+    @ObservedObject var locationViewModel = LocationViewModel()
     
     func fetchData(callback: @escaping ([Venue]?)-> Void) {
         let queryLocation = Constants.LOCATION
-//        let queryLocation = "\(userLatitude), \(userLongitude)"
+//        let queryLocation = "\(locationViewModel.userLatitude), \(locationViewModel.userLongitude)"
         let urlString = Constants.getCompleteURL() + "\(queryLocation)"
         guard let url = URL(string: urlString ) else {
             print("url parsing failed")

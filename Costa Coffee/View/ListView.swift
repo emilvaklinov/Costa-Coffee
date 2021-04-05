@@ -10,10 +10,13 @@ import CoreLocation
 
 struct ListView: View {
     @ObservedObject var viewModel = ListViewModel()
-    @ObservedObject var locationManager = LocationManager()
-
+    @ObservedObject var locationViewModel = LocationViewModel()
+    
+    
     var body: some View {
+        
         NavigationView {
+
             List(viewModel.venueList.indexed(), id: \.1.id) { (index, venue) in
                 ListItemView(venue: venue)
             }
@@ -27,13 +30,12 @@ struct ListView: View {
     }
 }
 
+
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
     }
 }
-
-
 
 
 struct IndexedCollection<Base: RandomAccessCollection>: RandomAccessCollection

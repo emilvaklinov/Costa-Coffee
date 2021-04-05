@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4828735F261519F50057681D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828735E261519F50057681D /* LocationManager.swift */; };
+		486A89FE261B345200691E14 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A89FD261B345200691E14 /* LocationViewModel.swift */; };
+		486A8A03261B377300691E14 /* CoreLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A8A02261B377200691E14 /* CoreLocationTests.swift */; };
 		48F92C392614F55A00050118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C382614F55A00050118 /* AppDelegate.swift */; };
 		48F92C3B2614F55A00050118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C3A2614F55A00050118 /* SceneDelegate.swift */; };
 		48F92C3D2614F55A00050118 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F92C3C2614F55A00050118 /* ListItemView.swift */; };
@@ -45,7 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4828735E261519F50057681D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		486A89FD261B345200691E14 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		486A8A02261B377200691E14 /* CoreLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationTests.swift; sourceTree = "<group>"; };
 		48F92C352614F55A00050118 /* Costa Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Costa Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F92C382614F55A00050118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F92C3A2614F55A00050118 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,11 +130,11 @@
 		48F92C372614F55A00050118 /* Costa Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				4828734E261514550057681D /* System */,
 				48F92C6E2614F5E700050118 /* Service */,
 				48F92C6D2614F5DC00050118 /* Model */,
-				48F92C6C2614F5D100050118 /* ViewModel */,
 				48F92C6B2614F5C500050118 /* View */,
-				4828734E261514550057681D /* System */,
+				48F92C6C2614F5D100050118 /* ViewModel */,
 				48F92C3E2614F55C00050118 /* Assets.xcassets */,
 				48F92C432614F55C00050118 /* LaunchScreen.storyboard */,
 				48F92C462614F55C00050118 /* Info.plist */,
@@ -154,6 +156,7 @@
 			children = (
 				48F92C4F2614F55C00050118 /* Costa_CoffeeTests.swift */,
 				48F92C512614F55C00050118 /* Info.plist */,
+				486A8A02261B377200691E14 /* CoreLocationTests.swift */,
 			);
 			path = "Costa CoffeeTests";
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				48F92C982614F76E00050118 /* ListViewModel.swift */,
+				486A89FD261B345200691E14 /* LocationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -201,7 +205,6 @@
 			children = (
 				48F92C8B2614F6E700050118 /* APIService.swift */,
 				48F92C932614F70C00050118 /* Constants.swift */,
-				4828735E261519F50057681D /* LocationManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -347,8 +350,8 @@
 				48F92C9E2614F7C200050118 /* ListView.swift in Sources */,
 				48F92C8C2614F6E700050118 /* APIService.swift in Sources */,
 				48F92C3D2614F55A00050118 /* ListItemView.swift in Sources */,
+				486A89FE261B345200691E14 /* LocationViewModel.swift in Sources */,
 				48F92C992614F76E00050118 /* ListViewModel.swift in Sources */,
-				4828735F261519F50057681D /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F92C502614F55C00050118 /* Costa_CoffeeTests.swift in Sources */,
+				486A8A03261B377300691E14 /* CoreLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

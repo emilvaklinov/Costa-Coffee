@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ListItemView: View {
-    
     let venue: Venue
     let apiService = APIService()
     @State var image = UIImage()
@@ -22,10 +21,11 @@ struct ListItemView: View {
                         .aspectRatio(contentMode: .fill)
                         .border(Color.red, width: 3.0)
                         .frame(width: 100, height: 100, alignment: .center)
-                        .clipShape(Circle())
-                        .overlay(
-                            Circle().stroke(Color.white, lineWidth: 2)
-                        )
+//                        .clipShape(Circle())
+//                        .overlay(
+//                            Circle().stroke(Color.white, lineWidth: 2)
+//                        )
+                        .maskRoundedRectangle(cornerRadius: getCornerRadius())
                     ZStack {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("\(venue.name)")
@@ -50,6 +50,15 @@ struct ListItemView: View {
             }
         }
     }
+    
+    func getProfileImageWidth() -> CGFloat {
+        UIScreen.main.bounds.width - 40
+    }
+    
+    func getCornerRadius() -> CGFloat {
+        getProfileImageWidth() / 2 * 0.835
+    }
+    
     func fetchImage() {
         apiService.fetchImage(venueId: venue.id) { data in
             guard let d = data else {
@@ -64,5 +73,13 @@ struct ListItemView: View {
                 self.image = img
             }
         }
+    }
+}
+
+extension View {
+    func maskRoundedRectangle(cornerRadius: CGFloat) -> some View {
+        self.mask(
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+        )
     }
 }

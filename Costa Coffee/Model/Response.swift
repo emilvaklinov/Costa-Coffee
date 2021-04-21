@@ -7,6 +7,12 @@
 
 import Foundation
 
+
+struct Results: Codable {
+    let response: Response
+}
+
 struct Response: Codable {
     let venues: [Venue]
 }
+
